@@ -1,26 +1,419 @@
 @import "tailwindcss";
 
+@theme {
+  --font-heading: var(--font-oswald), system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+}
+
+/* ============================================
+   BASE (Dark mode structure)
+   ============================================ */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #121212;
+  --bg-card: #1a1a1a;
+  --bg-card-hover: #222222;
+  --border-color: #262626;
+  --border-hover: #333333;
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1a1;
+  --text-muted: #666666;
+  --accent: #CCFF00;
+  --accent-hover: #B8E600;
+  --accent-soft: rgba(204, 255, 0, 0.15);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ============================================
+   DARK MODE COLORS
+   ============================================ */
+
+[data-theme="dark-lime"] {
+  --accent: #CCFF00;
+  --accent-hover: #B8E600;
+  --accent-soft: rgba(204, 255, 0, 0.15);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[data-theme="dark-orange"] {
+  --accent: #FF6B1A;
+  --accent-hover: #E55A0A;
+  --accent-soft: rgba(255, 107, 26, 0.15);
+}
+
+[data-theme="dark-pink"] {
+  --accent: #FF3D8B;
+  --accent-hover: #E6277A;
+  --accent-soft: rgba(255, 61, 139, 0.15);
+}
+
+[data-theme="dark-purple"] {
+  --accent: #A855F7;
+  --accent-hover: #9333EA;
+  --accent-soft: rgba(168, 85, 247, 0.15);
+}
+
+/* ============================================
+   LIGHT MODE (overrides base)
+   ============================================ */
+
+[data-theme^="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --bg-card: #f5f5f5;
+  --bg-card-hover: #ebebeb;
+  --border-color: #e5e5e5;
+  --border-hover: #d4d4d4;
+  --text-primary: #0a0a0a;
+  --text-secondary: #525252;
+  --text-muted: #a3a3a3;
+}
+
+[data-theme="light-blue"] {
+  --accent: #0066FF;
+  --accent-hover: #0052CC;
+  --accent-soft: rgba(0, 102, 255, 0.1);
+}
+
+[data-theme="light-green"] {
+  --accent: #10B981;
+  --accent-hover: #059669;
+  --accent-soft: rgba(16, 185, 129, 0.1);
+}
+
+[data-theme="light-rose"] {
+  --accent: #E11D48;
+  --accent-hover: #BE123C;
+  --accent-soft: rgba(225, 29, 72, 0.1);
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+html[data-theme^="light"] {
+  color-scheme: light;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+  color: #000000;
+}
+
+.bg-accent:hover {
+  background-color: var(--accent-hover);
+}
+
+.card-dark {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.card-dark:hover {
+  background-color: var(--bg-card-hover);
+  border-color: var(--border-hover);
+}
+
+/* ============================================
+   CONTAINER
+   ============================================ */
+
+.container-fitlog {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container-fitlog {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-fitlog {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container-fitlog {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+/* ============================================
+   ANIMATIONS — MODE TOGGLE
+   ============================================ */
+
+@keyframes rotate-in-clockwise {
+  from {
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-out-clockwise {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rotate-in-counter {
+  from {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-out-counter {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+}
+
+.animate-rotate-in-clockwise {
+  animation: rotate-in-clockwise 0.6s ease-in-out forwards;
+}
+
+.animate-rotate-out-clockwise {
+  animation: rotate-out-clockwise 0.6s ease-in-out forwards;
+}
+
+.animate-rotate-in-counter {
+  animation: rotate-in-counter 0.6s ease-in-out forwards;
+}
+
+.animate-rotate-out-counter {
+  animation: rotate-out-counter 0.6s ease-in-out forwards;
+}
+
+/* ============================================
+   ANIMATIONS — LOGO FADE
+   ============================================ */
+
+@keyframes logo-fade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-logo-fade {
+  animation: logo-fade 0.4s ease-in-out;
+}
+
+/* ============================================
+   SCROLLBAR HIDE
+   ============================================ */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ============================================
+   STICKY NAVBAR SUPPORT
+   ============================================ */
+
+html {
+  overflow-x: clip;
+}
+
+body {
+  overflow-x: clip;
+  position: relative;
+}
+
+/* ============================================
+   CUSTOM CURSOR
+   ============================================ */
+
+@media (pointer: fine) and (min-width: 1024px) {
+    body,
+    a,
+    button,
+    input,
+    textarea,
+    select,
+    [role="button"] {
+        cursor: none;
+    }
+}
+
+
+/* ============================================
+   INTRO LOADER ANIMATIONS
+   ============================================ */
+
+@keyframes intro-logo {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-intro-logo {
+    animation: intro-logo 0.8s ease-out forwards;
+}
+
+@keyframes intro-glow {
+    0%, 100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.15);
+    }
+}
+
+.animate-intro-glow {
+    animation: intro-glow 1.5s ease-in-out infinite;
+}
+
+
+/* ============================================
+   FLOATING ICONS
+   ============================================ */
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+    }
+    25% {
+        transform: translateY(-20px) translateX(10px);
+    }
+    50% {
+        transform: translateY(-10px) translateX(-15px);
+    }
+    75% {
+        transform: translateY(-30px) translateX(-5px);
+    }
+}
+
+.animate-float {
+    animation: float 25s ease-in-out infinite;
+}
+
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 60s linear infinite;
+}
+
+/* ============================================
+   FLOATING ICONS
+   ============================================ */
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+    }
+    25% {
+        transform: translateY(-20px) translateX(10px);
+    }
+    50% {
+        transform: translateY(-10px) translateX(-15px);
+    }
+    75% {
+        transform: translateY(-30px) translateX(-5px);
+    }
+}
+
+.animate-float {
+    animation: float 25s ease-in-out infinite;
+}
+
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 60s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-float,
+    .animate-spin-slow {
+        animation: none;
+    }
 }
