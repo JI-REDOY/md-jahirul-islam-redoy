@@ -136,7 +136,7 @@ const About = () => {
                         {aboutData.resumeUrl && (
                             <a
                                 href={aboutData.resumeUrl}
-                                download="JI-Redoy-Resume.pdf"
+                                download="Jahirul_Islam_Redoy_Resume.pdf"
                                 className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-black transition-opacity hover:opacity-90 sm:px-6 sm:py-3 sm:text-sm"
                             >
                                 <svg

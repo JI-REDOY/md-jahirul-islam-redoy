@@ -91,7 +91,7 @@ const Hero = () => {
                         {aboutData.resumeUrl && (
                             <a
                                 href={aboutData.resumeUrl}
-                                download="JI-Redoy-Resume.pdf"
+                                download="Jahirul_Islam_Redoy_Resume.pdf"
                                 className="inline-flex items-center gap-2 rounded-full border border-[var(--border-color)] px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-[var(--text-primary)] transition-colors hover:border-[var(--accent)] hover:text-accent sm:px-6 sm:py-3 sm:text-sm"
                             >
                                 <svg

@@ -9,6 +9,6 @@ export const aboutData: AboutData = {
         { icon: "graduation", label: "Education", value: "Computer Science" },
         { icon: "mail", label: "Email", value: "aridoy102536@gmail.com" },
     ],
-    resumeUrl: "/resume.pdf",
+    resumeUrl: "/Jahirul_Islam_Redoy_Resume.pdf",
     email: "aridoy102536@gmail.com",
 };
