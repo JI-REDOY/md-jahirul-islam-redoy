@@ -22,11 +22,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://md-jahirul-islam-redoy.vercel.app"),
   title: {
-    default: "MD Jahirul Islam Redoy — Full Stack Developer",
-    template: "%s | MD Jahirul Islam Redoy",
+    default: "MD JAHIRUL ISLAM REDOY — Full Stack Developer",
+    template: "%s | MD JAHIRUL ISLAM REDOY",
   },
   description:
-    "Portfolio of MD Jahirul Islam Redoy (also known as JI Redoy, Hridoy, or Ridoy) — Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, MongoDB, and modern web development.",
+    "Portfolio of MD JAHIRUL ISLAM REDOY — Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, and MongoDB. Building modern, responsive web applications with clean code and user-focused design.",
   keywords: [
     "MD Jahirul Islam Redoy",
     "MD Jahirul Islam",
@@ -69,15 +69,12 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "MD Jahirul Islam Redoy",
+      name: "MD JAHIRUL ISLAM REDOY",
       url: "https://md-jahirul-islam-redoy.vercel.app",
     },
-    { name: "MD Zahirul Islam Redoy" },
-    { name: "MD Jahirul Islam Hridoy" },
-    { name: "MD Jahirul Islam Ridoy" },
   ],
-  creator: "MD Jahirul Islam Redoy",
-  publisher: "MD Jahirul Islam Redoy",
+  creator: "MD JAHIRUL ISLAM REDOY",
+  publisher: "MD JAHIRUL ISLAM REDOY",
   alternates: {
     canonical: "https://md-jahirul-islam-redoy.vercel.app",
   },
@@ -85,31 +82,31 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://md-jahirul-islam-redoy.vercel.app",
-    siteName: "MD Jahirul Islam Redoy — Portfolio",
-    title: "MD Jahirul Islam Redoy — Full Stack Developer",
+    siteName: "MD JAHIRUL ISLAM REDOY — Portfolio",
+    title: "MD JAHIRUL ISLAM REDOY — Full Stack Developer",
     description:
-      "Portfolio of MD Jahirul Islam Redoy (also known as JI Redoy, Hridoy, or Ridoy) — Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, and MongoDB.",
+      "Portfolio of MD JAHIRUL ISLAM REDOY — Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, and MongoDB.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "MD Jahirul Islam Redoy — Full Stack Developer",
+        alt: "MD JAHIRUL ISLAM REDOY — Full Stack Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "MD Jahirul Islam Redoy — Full Stack Developer",
+    title: "MD JAHIRUL ISLAM REDOY — Full Stack Developer",
     description:
-      "Portfolio of MD Jahirul Islam Redoy (also known as JI Redoy, Hridoy, or Ridoy) — Full Stack Developer.",
+      "Portfolio of MD JAHIRUL ISLAM REDOY — Full Stack Developer.",
     images: ["/og-image.png"],
   },
   icons: {
     icon: [
       {
         url: "/blackLogo.png",
-        type: "image/jpeg",
+        type: "image/png",
         media: "(prefers-color-scheme: light)",
       },
       {
@@ -149,36 +146,28 @@ const themeScript = `
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "MD Jahirul Islam Redoy",
+  name: "MD JAHIRUL ISLAM REDOY",
   alternateName: [
+    "MD Jahirul Islam Redoy",
     "MD Jahirul Islam",
     "Md. Jahirul Islam Redoy",
     "Jahirul Islam Redoy",
     "Jahirul Redoy",
     "JI Redoy",
     "MD Zahirul Islam Redoy",
-    "MD Zahirul Islam",
     "Zahirul Islam Redoy",
-    "Zahirul Redoy",
     "MD Jahirul Islam Hridoy",
     "Jahirul Islam Hridoy",
-    "Jahirul Hridoy",
     "JI Hridoy",
     "Hridoy",
     "MD Jahirul Islam Ridoy",
     "Jahirul Islam Ridoy",
-    "Jahirul Ridoy",
     "JI Ridoy",
     "Ridoy",
-    "Md Jahirul",
-    "Md Zahirul",
-    "Md Redoy",
-    "Md Hridoy",
-    "Md Ridoy",
   ],
   jobTitle: "Full Stack Developer",
   description:
-    "Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, and MongoDB. Also known as Zahirul Islam, Hridoy, or Ridoy.",
+    "Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, and MongoDB.",
   url: "https://md-jahirul-islam-redoy.vercel.app",
   image: "https://md-jahirul-islam-redoy.vercel.app/portfolioImg.png",
   sameAs: [
