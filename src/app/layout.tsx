@@ -107,11 +107,19 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/logo.png", type: "image/png" },
-      { url: "/favicon.ico" },
+      {
+        url: "/blackLogo.png",
+        type: "image/jpeg",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/whiteLogo.png",
+        type: "image/png",
+        media: "(prefers-color-scheme: dark)",
+      },
     ],
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    shortcut: "/blackLogo.png",
+    apple: "/blackLogo.png",
   },
   robots: {
     index: true,
