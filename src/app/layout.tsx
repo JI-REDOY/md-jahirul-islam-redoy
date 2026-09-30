@@ -28,32 +28,42 @@ export const metadata: Metadata = {
   description:
     "Portfolio of MD JAHIRUL ISLAM REDOY — Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, and MongoDB. Building modern, responsive web applications with clean code and user-focused design.",
   keywords: [
-    "MD Jahirul Islam Redoy",
-    "MD Jahirul Islam",
-    "Md. Jahirul Islam Redoy",
+    // সব CAPITAL
+    "MD JAHIRUL ISLAM REDOY",
+    "MD JAHIRUL ISLAM",
+    "JAHIRUL ISLAM REDOY",
+    "JAHIRUL REDOY",
+    "JI REDOY",
+
+    // ছোট হাতের (lowercase)
+    "md jahirul islam redoy",
+    "md jahirul islam",
+    "jahirul islam redoy",
+    "jahirul redoy",
+    "ji redoy",
+
+    // মিশ্র (Mixed case)
+    "Md Jahirul Islam Redoy",
+    "Md Jahirul Islam",
     "Jahirul Islam Redoy",
     "Jahirul Redoy",
     "JI Redoy",
+    "Md. Jahirul Islam Redoy",
+
+    // অন্য বানান
     "MD Zahirul Islam Redoy",
-    "MD Zahirul Islam",
-    "Zahirul Islam Redoy",
-    "Zahirul Redoy",
-    "Md Zahirul",
-    "MD Jahirul Islam Hridoy",
-    "Jahirul Islam Hridoy",
-    "Jahirul Hridoy",
-    "JI Hridoy",
-    "Hridoy",
-    "Md Hridoy",
+    "Md Zahirul Islam Redoy",
+    "md zahirul islam redoy",
     "MD Jahirul Islam Ridoy",
-    "Jahirul Islam Ridoy",
-    "Jahirul Ridoy",
-    "JI Ridoy",
-    "Ridoy",
-    "Md Ridoy",
-    "Md Jahirul",
-    "Md Redoy",
+    "Md Jahirul Islam Ridoy",
+    "md jahirul islam ridoy",
+    "MD Jahirul Islam Hridoy",
+    "Md Jahirul Islam Hridoy",
+    "md jahirul islam hridoy",
+
+    // পেশা
     "Full Stack Developer",
+    "full stack developer",
     "Full Stack Developer Bangladesh",
     "Next.js Developer",
     "React Developer",
@@ -104,18 +114,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      {
-        url: "/blackLogo.png",
-        type: "image/png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/whiteLogo.png",
-        type: "image/png",
-        media: "(prefers-color-scheme: dark)",
-      },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/blackLogo.png", type: "image/png", sizes: "32x32", media: "(prefers-color-scheme: light)" },
+      { url: "/whiteLogo.png", type: "image/png", sizes: "32x32", media: "(prefers-color-scheme: dark)" },
     ],
-    shortcut: "/blackLogo.png",
+    shortcut: "/favicon.ico",
     apple: "/blackLogo.png",
   },
   robots: {
@@ -148,28 +151,42 @@ const jsonLd = {
   "@type": "Person",
   name: "MD JAHIRUL ISLAM REDOY",
   alternateName: [
-    "MD Jahirul Islam Redoy",
-    "MD Jahirul Islam",
-    "Md. Jahirul Islam Redoy",
+    // সব CAPITAL
+    "MD JAHIRUL ISLAM REDOY",
+    "MD JAHIRUL ISLAM",
+    "JAHIRUL ISLAM REDOY",
+    "JAHIRUL REDOY",
+    "JI REDOY",
+
+    // ছোট হাতের
+    "md jahirul islam redoy",
+    "md jahirul islam",
+    "jahirul islam redoy",
+    "jahirul redoy",
+    "ji redoy",
+
+    // মিশ্র
+    "Md Jahirul Islam Redoy",
+    "Md Jahirul Islam",
     "Jahirul Islam Redoy",
     "Jahirul Redoy",
     "JI Redoy",
+    "Md. Jahirul Islam Redoy",
+
+    // অন্য বানান
     "MD Zahirul Islam Redoy",
-    "Zahirul Islam Redoy",
-    "MD Jahirul Islam Hridoy",
-    "Jahirul Islam Hridoy",
-    "JI Hridoy",
-    "Hridoy",
+    "Md Zahirul Islam Redoy",
     "MD Jahirul Islam Ridoy",
-    "Jahirul Islam Ridoy",
-    "JI Ridoy",
-    "Ridoy",
+    "Md Jahirul Islam Ridoy",
+    "MD Jahirul Islam Hridoy",
+    "Md Jahirul Islam Hridoy",
   ],
   jobTitle: "Full Stack Developer",
   description:
     "Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, and MongoDB.",
   url: "https://md-jahirul-islam-redoy.vercel.app",
   image: "https://md-jahirul-islam-redoy.vercel.app/portfolioImg.png",
+  email: "aridoy102536@gmail.com",
   sameAs: [
     "https://github.com/JI-REDOY",
     "https://linkedin.com/in/ji-redoy",
