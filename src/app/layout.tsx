@@ -22,11 +22,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://md-jahirul-islam-redoy.vercel.app"),
   title: {
-    default: "MD Jahirul Islam Redoy (Hridoy / Ridoy) — Full Stack Developer",
+    default: "MD Jahirul Islam Redoy — Full Stack Developer",
     template: "%s | MD Jahirul Islam Redoy",
   },
   description:
-    "Portfolio of MD Jahirul Islam Redoy (also known as MD Zahirul Islam, JI Redoy, Hridoy, or Ridoy) — Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, MongoDB, and modern web development.",
+    "Portfolio of MD Jahirul Islam Redoy (also known as JI Redoy, Hridoy, or Ridoy) — Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, MongoDB, and modern web development.",
   keywords: [
     "MD Jahirul Islam Redoy",
     "MD Jahirul Islam",
@@ -86,9 +86,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://md-jahirul-islam-redoy.vercel.app",
     siteName: "MD Jahirul Islam Redoy — Portfolio",
-    title: "MD Jahirul Islam Redoy (Hridoy / Ridoy) — Full Stack Developer",
+    title: "MD Jahirul Islam Redoy — Full Stack Developer",
     description:
-      "Portfolio of MD Jahirul Islam Redoy (also MD Zahirul Islam, JI Redoy, Hridoy, Ridoy) — Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, and MongoDB.",
+      "Portfolio of MD Jahirul Islam Redoy (also known as JI Redoy, Hridoy, or Ridoy) — Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, and MongoDB.",
     images: [
       {
         url: "/og-image.png",
@@ -100,10 +100,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MD Jahirul Islam Redoy (Hridoy / Ridoy) — Full Stack Developer",
+    title: "MD Jahirul Islam Redoy — Full Stack Developer",
     description:
-      "Portfolio of MD Jahirul Islam Redoy (also MD Zahirul Islam, JI Redoy, Hridoy, Ridoy) — Full Stack Developer.",
+      "Portfolio of MD Jahirul Islam Redoy (also known as JI Redoy, Hridoy, or Ridoy) — Full Stack Developer.",
     images: ["/og-image.png"],
+  },
+  icons: {
+    icon: [
+      { url: "/logo.png", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
   robots: {
     index: true,
