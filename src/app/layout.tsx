@@ -28,29 +28,22 @@ export const metadata: Metadata = {
   description:
     "Portfolio of MD JAHIRUL ISLAM REDOY — Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, and MongoDB. Building modern, responsive web applications with clean code and user-focused design.",
   keywords: [
-    // মূল নাম
     "MD JAHIRUL ISLAM REDOY",
     "MD JAHIRUL ISLAM",
     "JAHIRUL ISLAM REDOY",
     "JAHIRUL REDOY",
     "JI REDOY",
-    
-    // ছোট হাতের (lowercase)
     "md jahirul islam redoy",
     "md jahirul islam",
     "jahirul islam redoy",
     "jahirul redoy",
     "ji redoy",
-
-    // মিশ্র (Mixed case)
     "Md Jahirul Islam Redoy",
     "Md Jahirul Islam",
     "Jahirul Islam Redoy",
     "Jahirul Redoy",
     "JI Redoy",
     "Md. Jahirul Islam Redoy",
-
-    // বানান বিকৃতি (Misspellings & Variations)
     "MD ZAHIRUL ISLAM REDOY",
     "Md Zahirul Islam Redoy",
     "md zahirul islam redoy",
@@ -65,8 +58,6 @@ export const metadata: Metadata = {
     "md jahirul islam hridoy",
     "MD ZAHIRUL ISLAM HRIDOY",
     "ZAHIRUL ISLAM HRIDOY",
-
-    // পেশা
     "Full Stack Developer",
     "full stack developer",
     "Full Stack Developer Bangladesh",
@@ -97,7 +88,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://md-jahirul-islam-redoy.vercel.app",
-    siteName: "MD JAHIRUL ISLAM REDOY — Portfolio",
+    siteName: "MD JAHIRUL ISLAM REDOY", // এখানে Vercel বাদ দিয়ে আপনার নাম দেওয়া হলো
     title: "MD JAHIRUL ISLAM REDOY — Full Stack Developer",
     description:
       "Portfolio of MD JAHIRUL ISLAM REDOY — Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, and MongoDB.",
@@ -137,7 +128,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  // গুগল সার্চ কনসোল থেকে কোড পেলে এখানে বসাবেন
   verification: {
     google: "YOUR_GOOGLE_VERIFICATION_CODE_HERE", 
   },
@@ -160,29 +150,22 @@ const jsonLd = {
   "@type": "Person",
   name: "MD JAHIRUL ISLAM REDOY",
   alternateName: [
-    // সব CAPITAL
     "MD JAHIRUL ISLAM REDOY",
     "MD JAHIRUL ISLAM",
     "JAHIRUL ISLAM REDOY",
     "JAHIRUL REDOY",
     "JI REDOY",
-
-    // ছোট হাতের
     "md jahirul islam redoy",
     "md jahirul islam",
     "jahirul islam redoy",
     "jahirul redoy",
     "ji redoy",
-
-    // মিশ্র
     "Md Jahirul Islam Redoy",
     "Md Jahirul Islam",
     "Jahirul Islam Redoy",
     "Jahirul Redoy",
     "JI Redoy",
     "Md. Jahirul Islam Redoy",
-
-    // বানান বিকৃতি (Misspellings)
     "MD ZAHIRUL ISLAM REDOY",
     "Md Zahirul Islam Redoy",
     "MD ZAHIRUL ISALM",
@@ -234,6 +217,19 @@ const jsonLd = {
     "@type": "PostalAddress",
     addressLocality: "Dhaka",
     addressCountry: "Bangladesh",
+  },
+  // এখানে Publisher এবং Author যোগ করা হলো, যাতে গুগল আপনার নাম ধরে
+  publisher: {
+    "@type": "Organization",
+    name: "MD JAHIRUL ISLAM REDOY",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://md-jahirul-islam-redoy.vercel.app/blackLogo.png",
+    },
+  },
+  author: {
+    "@type": "Person",
+    name: "MD JAHIRUL ISLAM REDOY",
   },
 };
 
