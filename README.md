@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MD JAHIRUL ISLAM REDOY — Portfolio 🚀
 
-## Getting Started
+A modern, responsive, and fully functional personal portfolio website showcasing my skills, projects, and professional journey. Built with **Next.js 15**, **TypeScript**, and **Tailwind CSS**, featuring a sleek dark/light theme toggle.
 
-First, run the development server:
+## 🔗 Live Demo
+[**View Live Portfolio**](https://md-jahirul-islam-redoy.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop.
+- **Multi-Theme Support:** Beautiful Dark/Light mode with system-aware toggle and custom neon accents.
+- **Dynamic Projects:** Auto-scrolling project showcase with detailed modals for challenges and future improvements.
+- **Interactive UI:** Custom cursor, smooth scrolling, and engaging hover effects.
+- **SEO Optimized:** Comprehensive metadata, OpenGraph tags, and JSON-LD schema for better search visibility.
+- **CV/Resume:** Quick and easy download of my latest resume.
+- **Detailed Information:** Interactive "View Details" modal for Education and Experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Icons:** Custom SVGs & [Simple Icons](https://simpleicons.org/)
+- **Deployment:** [Vercel](https://vercel.com/)
 
-## Learn More
+## 🚀 Featured Projects
 
-To learn more about Next.js, take a look at the following resources:
+1. **NihongoBD** - A comprehensive Japanese learning platform (Next.js, MongoDB).
+2. **বাজার দর (Bazar Dor)** - Real-time price tracking for daily essentials.
+3. **CareerConnect AI** - A LinkedIn-inspired job platform (MERN Stack).
+4. **Bangla News 24** - A full-stack news portal.
+5. **FitLog** - A workout tracker with a dynamic planner.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💻 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To run this project locally, follow these steps:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/JI-REDOY/md-jahirul-islam-redoy.git
