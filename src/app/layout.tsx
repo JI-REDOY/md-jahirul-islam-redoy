@@ -88,15 +88,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://md-jahirul-islam-redoy.vercel.app",
-    siteName: "MD JAHIRUL ISLAM REDOY", // এখানে Vercel বাদ দিয়ে আপনার নাম দেওয়া হলো
+    siteName: "MD JAHIRUL ISLAM REDOY",
     title: "MD JAHIRUL ISLAM REDOY — Full Stack Developer",
     description:
       "Portfolio of MD JAHIRUL ISLAM REDOY — Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, and MongoDB.",
     images: [
       {
-        url: "/og-image.png",
+        // আপনার পাবলিক ফোল্ডারে থাকা ছবির নাম
+        url: "/portfolioImg.png", 
         width: 1200,
-        height: 630,
+        height: 1200, // যদি স্কয়ার ছবি হয় তবে 1200x1200, নাহলে 630 দিবেন
         alt: "MD JAHIRUL ISLAM REDOY — Full Stack Developer",
       },
     ],
@@ -106,7 +107,7 @@ export const metadata: Metadata = {
     title: "MD JAHIRUL ISLAM REDOY — Full Stack Developer",
     description:
       "Portfolio of MD JAHIRUL ISLAM REDOY — Full Stack Developer.",
-    images: ["/og-image.png"],
+    images: ["/portfolioImg.png"],
   },
   icons: {
     icon: [
@@ -182,6 +183,7 @@ const jsonLd = {
   description:
     "Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, and MongoDB.",
   url: "https://md-jahirul-islam-redoy.vercel.app",
+  // আপনার ছবির সম্পূর্ণ লিংক
   image: "https://md-jahirul-islam-redoy.vercel.app/portfolioImg.png",
   email: "aridoy102536@gmail.com",
   sameAs: [
@@ -218,7 +220,6 @@ const jsonLd = {
     addressLocality: "Dhaka",
     addressCountry: "Bangladesh",
   },
-  // এখানে Publisher এবং Author যোগ করা হলো, যাতে গুগল আপনার নাম ধরে
   publisher: {
     "@type": "Organization",
     name: "MD JAHIRUL ISLAM REDOY",
