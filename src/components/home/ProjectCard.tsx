@@ -5,11 +5,10 @@ import { Project } from "@/types/project.types";
 
 const ProjectCard = ({ project }: { project: Project }) => {
     return (
-        <div className="card-dark flex w-[280px] shrink-0 flex-col overflow-hidden sm:w-[320px] lg:w-[360px]">
+        <div className="card-dark flex h-full w-[280px] shrink-0 flex-col overflow-hidden sm:w-[320px] lg:w-[360px]">
 
             {/* Image */}
             <div className="relative aspect-video w-full overflow-hidden bg-[var(--bg-secondary)]">
-
                 {project.image ? (
                     <Image
                         src={project.image}
@@ -36,14 +35,12 @@ const ProjectCard = ({ project }: { project: Project }) => {
                         </svg>
                     </div>
                 )}
-
             </div>
 
             {/* Content */}
             <div className="flex flex-1 flex-col gap-3 p-5">
-
-                {/* Title */}
-                <h3 className="font-heading text-lg font-bold uppercase text-[var(--text-primary)] sm:text-xl">
+                {/* Title (min-h added so 1 line and 2 lines take same space) */}
+                <h3 className="min-h-[56px] font-heading text-lg font-bold uppercase text-[var(--text-primary)] sm:text-xl sm:min-h-[60px]">
                     {project.title}
                 </h3>
 
@@ -52,9 +49,9 @@ const ProjectCard = ({ project }: { project: Project }) => {
                     {project.description}
                 </p>
 
-                {/* Tech Badges */}
+                {/* Tech Badges (min-h added to fix height) */}
                 {project.tech.length > 0 && (
-                    <div className="flex flex-wrap gap-1.5">
+                    <div className="flex min-h-[42px] flex-wrap content-start gap-1.5">
                         {project.tech.map((tech) => {
                             return (
                                 <span
@@ -71,7 +68,6 @@ const ProjectCard = ({ project }: { project: Project }) => {
                 {/* Buttons */}
                 {(project.liveUrl || project.githubUrl) && (
                     <div className="mt-auto flex flex-wrap items-center gap-2 pt-2">
-
                         {project.liveUrl && (
                             <Link
                                 href={project.liveUrl}
@@ -119,12 +115,9 @@ const ProjectCard = ({ project }: { project: Project }) => {
                                 GitHub
                             </Link>
                         )}
-
                     </div>
                 )}
-
             </div>
-
         </div>
     );
 };

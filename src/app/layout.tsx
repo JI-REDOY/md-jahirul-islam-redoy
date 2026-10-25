@@ -28,13 +28,13 @@ export const metadata: Metadata = {
   description:
     "Portfolio of MD JAHIRUL ISLAM REDOY — Full Stack Developer from Bangladesh specializing in Next.js, React, TypeScript, and MongoDB. Building modern, responsive web applications with clean code and user-focused design.",
   keywords: [
-    // সব CAPITAL
+    // মূল নাম
     "MD JAHIRUL ISLAM REDOY",
     "MD JAHIRUL ISLAM",
     "JAHIRUL ISLAM REDOY",
     "JAHIRUL REDOY",
     "JI REDOY",
-
+    
     // ছোট হাতের (lowercase)
     "md jahirul islam redoy",
     "md jahirul islam",
@@ -50,16 +50,21 @@ export const metadata: Metadata = {
     "JI Redoy",
     "Md. Jahirul Islam Redoy",
 
-    // অন্য বানান
-    "MD Zahirul Islam Redoy",
+    // বানান বিকৃতি (Misspellings & Variations)
+    "MD ZAHIRUL ISLAM REDOY",
     "Md Zahirul Islam Redoy",
     "md zahirul islam redoy",
-    "MD Jahirul Islam Ridoy",
+    "MD ZAHIRUL ISALM",
+    "MD ZAHIRUL ISLAM",
+    "ZAHIRUL ISALM",
+    "MD JAHIRUL ISLAM RIDOY",
     "Md Jahirul Islam Ridoy",
     "md jahirul islam ridoy",
-    "MD Jahirul Islam Hridoy",
+    "MD JAHIRUL ISLAM HRIDOY",
     "Md Jahirul Islam Hridoy",
     "md jahirul islam hridoy",
+    "MD ZAHIRUL ISLAM HRIDOY",
+    "ZAHIRUL ISLAM HRIDOY",
 
     // পেশা
     "Full Stack Developer",
@@ -132,6 +137,10 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  // গুগল সার্চ কনসোল থেকে কোড পেলে এখানে বসাবেন
+  verification: {
+    google: "YOUR_GOOGLE_VERIFICATION_CODE_HERE", 
+  },
 };
 
 const themeScript = `
@@ -173,13 +182,18 @@ const jsonLd = {
     "JI Redoy",
     "Md. Jahirul Islam Redoy",
 
-    // অন্য বানান
-    "MD Zahirul Islam Redoy",
+    // বানান বিকৃতি (Misspellings)
+    "MD ZAHIRUL ISLAM REDOY",
     "Md Zahirul Islam Redoy",
-    "MD Jahirul Islam Ridoy",
+    "MD ZAHIRUL ISALM",
+    "MD ZAHIRUL ISLAM",
+    "ZAHIRUL ISALM",
+    "MD JAHIRUL ISLAM RIDOY",
     "Md Jahirul Islam Ridoy",
-    "MD Jahirul Islam Hridoy",
+    "MD JAHIRUL ISLAM HRIDOY",
     "Md Jahirul Islam Hridoy",
+    "MD ZAHIRUL ISLAM HRIDOY",
+    "ZAHIRUL ISLAM HRIDOY",
   ],
   jobTitle: "Full Stack Developer",
   description:

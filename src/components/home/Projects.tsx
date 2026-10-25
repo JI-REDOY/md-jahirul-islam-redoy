@@ -74,16 +74,17 @@ const Projects = () => {
                 {/* Right fade */}
                 <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-12 bg-gradient-to-l from-[var(--bg-primary)] via-[var(--bg-primary)]/80 to-transparent sm:w-20" />
 
-                {/* Scroll area */}
+                {/* Scroll area (Added items-stretch here) */}
                 <div
                     ref={scrollRef}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
-                    className="scrollbar-hide flex gap-5 overflow-x-auto pb-4 sm:gap-6 lg:gap-7"
+                    className="scrollbar-hide flex items-stretch gap-5 overflow-x-auto pb-4 sm:gap-6 lg:gap-7"
                 >
                     {duplicatedProjects.map((project, index) => {
                         return (
-                            <div key={`${project.id}-${index}`} className="shrink-0">
+                            // Added flex and h-auto to the wrapper
+                            <div key={`${project.id}-${index}`} className="flex h-auto shrink-0">
                                 <ProjectCard project={project} />
                             </div>
                         );
