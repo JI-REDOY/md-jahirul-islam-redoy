@@ -10,6 +10,8 @@ export const projects: Project[] = [
         liveUrl: "https://nihongobd.vercel.app",
         githubUrl: "https://github.com/JI-REDOY/nihongobd",
         featured: true,
+        challenges: "Handling 1,800+ vocabulary data efficiently and implementing the Web Speech API across different browsers without lag.",
+        improvements: "Adding an AI-based conversational partner for speaking practice and introducing JLPT N3 level in the future.",
     },
     {
         id: 2,
@@ -20,6 +22,8 @@ export const projects: Project[] = [
         liveUrl: "https://daily-bazar-dor-peach.vercel.app",
         githubUrl: "https://github.com/JI-REDOY/bazar-dor",
         featured: true,
+        challenges: "Scraping and structuring real-time daily price data from multiple markets while maintaining data accuracy and UI responsiveness.",
+        improvements: "Implementing a price prediction graph using Machine Learning and adding SMS alerts for price drops.",
     },
     {
         id: 3,
@@ -30,6 +34,8 @@ export const projects: Project[] = [
         liveUrl: "https://career-connect-ai.vercel.app",
         githubUrl: "https://github.com/JI-REDOY/career-connect-ai",
         featured: true,
+        challenges: "Managing complex relational data in MongoDB for job posts, user profiles, and likes, while ensuring fast search queries.",
+        improvements: "Integrating an AI resume parser and job-matching algorithm to suggest jobs based on user skills.",
     },
     {
         id: 4,
@@ -40,6 +46,8 @@ export const projects: Project[] = [
         liveUrl: "https://bangla-news-24-eta.vercel.app",
         githubUrl: "https://github.com/JI-REDOY/bangla-news-24",
         featured: true,
+        challenges: "Optimizing image loading and page speed for high-traffic news articles, and managing live ticker state without re-rendering the whole page.",
+        improvements: "Adding a comment section, user reactions, and a dedicated admin dashboard for journalists to publish news directly.",
     },
     {
         id: 5,
@@ -50,5 +58,7 @@ export const projects: Project[] = [
         liveUrl: "https://fit-log-pi-three.vercel.app",
         githubUrl: "https://github.com/JI-REDOY/fit-log",
         featured: true,
+        challenges: "Managing client-side state with Context API and syncing it perfectly with localStorage to prevent data loss on page reloads.",
+        improvements: "Building a backend to sync user data across devices and adding a progress chart feature to track weight loss over time.",
     },
 ];

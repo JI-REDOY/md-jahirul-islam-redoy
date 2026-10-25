@@ -12,6 +12,15 @@ export const contactLinks: ContactLink[] = [
     },
     {
         id: 2,
+        platform: "phone",
+        label: "Phone",
+        value: "+880 1535-798573",
+        url: "tel:+8801535798573",
+        icon: "phone", // নতুন যোগ করা হলো
+        action: "Call",
+    },
+    {
+        id: 3,
         platform: "github",
         label: "GitHub",
         value: "/JI-REDOY",
@@ -20,7 +29,7 @@ export const contactLinks: ContactLink[] = [
         action: "Visit",
     },
     {
-        id: 3,
+        id: 4,
         platform: "linkedin",
         label: "LinkedIn",
         value: "/in/ji-redoy",
@@ -28,8 +37,17 @@ export const contactLinks: ContactLink[] = [
         icon: "linkedin",
         action: "Connect",
     },
+    // {
+    //     id: 5,
+    //     platform: "twitter",
+    //     label: "Twitter (X)",
+    //     value: "@JI_REDOY", // আপনার ইউজারনেম দিন
+    //     url: "https://twitter.com/JI_REDOY", // আপনার লিংক দিন
+    //     icon: "twitter", // নতুন যোগ করা হলো
+    //     action: "Follow",
+    // },
     {
-        id: 4,
+        id: 6,
         platform: "facebook",
         label: "Facebook",
         value: "/ji.redoy.25",
@@ -38,7 +56,7 @@ export const contactLinks: ContactLink[] = [
         action: "Follow",
     },
     {
-        id: 5,
+        id: 7,
         platform: "whatsapp",
         label: "WhatsApp",
         value: "+880 1535-798573",
